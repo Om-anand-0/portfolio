@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.skills ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+}
+
+.skills li {
+    background-color: #333; /* Dark background for skill items */
+    color: white; /* White text */
+    display: inline-block; /* Items in a row */
+    padding: 10px; /* Padding around each skill */
+    margin: 5px; /* Space between skills */
+    border-radius: 5px; /* Rounded corners */
+}
+
+footer {
+    background-color: #333; /* Dark background for footer */
+    color: white; /* White text */
+    text-align: center; /* Center text */
+    padding: 10px; /* Padding inside footer */
+}
+
+a {
+    color: #2196F3; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.project {
+    margin-bottom: 20px; /* Space below each project */
+}
+
+.project h3 {
+    margin-top: 10px; /* Space above project titles */
+}
+
+.project p {
+    margin: 10px 0; /* Space above and below project descriptions */
+}

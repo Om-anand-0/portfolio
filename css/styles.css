@@ -1,91 +1,42 @@
+/* Basic styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-nav {
-    margin-top: 10px;
-}
-
-nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
-section {
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 800px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2 {
-    margin-bottom: 20px;
-}
-
-p {
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
 }
 
-.project img {
-    width: 100%;
+h1, h2, h3 {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Navigation hover effect */
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fbbf24; /* Tailwind yellow-500 color */
+}
+
+/* Card styling */
+.card {
     border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
 }
 
-.skills ul {
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove default padding */
+.card:hover {
+    transform: translateY(-5px);
 }
 
-.skills li {
-    background-color: #333; /* Dark background for skill items */
-    color: white; /* White text */
-    display: inline-block; /* Items in a row */
-    padding: 10px; /* Padding around each skill */
-    margin: 5px; /* Space between skills */
-    border-radius: 5px; /* Rounded corners */
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
 }
 
-footer {
-    background-color: #333; /* Dark background for footer */
-    color: white; /* White text */
-    text-align: center; /* Center text */
-    padding: 10px; /* Padding inside footer */
-}
-
-a {
-    color: #2196F3; /* Link color */
-    text-decoration: none; /* Remove underline */
-}
-
-a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
-.project {
-    margin-bottom: 20px; /* Space below each project */
-}
-
-.project h3 {
-    margin-top: 10px; /* Space above project titles */
-}
-
-.project p {
-    margin: 10px 0; /* Space above and below project descriptions */
+/* Section padding */
+section {
+    margin-bottom: 40px;
 }

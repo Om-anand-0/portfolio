@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>Om's Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png"> <!-- Add a favicon -->
 </head>
 <body>
     <header>
-        <h1>Om</h1>
+        <h1>Om Anand</h1>
         <nav>
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects/Work</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects/Work</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <section id="about">
         <h2>About Me</h2>
-        <p>I am Om, a passionate game developer and programmer with experience in C++, Unity, and 3D modeling. I've been working on various personal and team projects that range from building games, developing algorithms, and creating 3D models. Currently, I'm honing my skills in data structures and algorithms, aiming to master problem-solving techniques.</p>
+        <p>I am Om, a passionate game developer and programmer with experience in C++, Unity, and 3D modeling.</p>
+        <p>Building immersive gaming experiences and solving complex problems with code.</p>
     </section>
     <section id="projects">
         <h2>Projects/Work</h2>
@@ -27,9 +31,8 @@
             <img src="images/3d-donut.png" alt="3D Donut Animation">
             <p>A fully animated 3D donut created in Blender, inspired by Blender Guru's tutorials. This project taught me the fundamentals of 3D modeling, texturing, and lighting.</p>
             <a href="https://example.com/view-project" target="_blank">View Project</a>
-            <a href="https://github.com/yourusername/3d-donut-animation" target="_blank">View Code</a>
+            <a href="https://github.com/Om-anand-0/3d-donut-animation" target="_blank">View Code</a>
         </div>
-        
         <div class="project">
             <h3>2048 Game (C++)</h3>
             <p>A C++ implementation of the popular 2048 game. I focused on making the game logic efficient, with features like a scoreboard and undo functionality.</p>
@@ -40,7 +43,7 @@
             <h3>LeetCode Problem Tracker (Python)</h3>
             <p>A command-line based LeetCode problem tracker, using dashboards for tracking daily LeetCode practice. This project helped me organize my 150-day coding challenge.</p>
             <a href="https://example.com/view-leetcode-tracker" target="_blank">View Project</a>
-            <a href="https://github.com/yourusername/leetcode-tracker" target="_blank">View Code</a>
+            <a href="https://github.com/Om-anand-0/leetcode-tracker" target="_blank">View Code</a>
         </div>
         <div class="project">
             <h3>Library Management System (C++)</h3>
@@ -52,24 +55,25 @@
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>C++</li>
-            <li>Python</li>
-            <li>Unity</li>
-            <li>3D Modeling</li>
-            <li>Data Structures & Algorithms</li>
+            <li>C++ (Advanced)</li>
+            <li>Python (Intermediate)</li>
+            <li>Unity (Beginner)</li>
+            <li>3D Modeling (Advanced)</li>
+            <li>Data Structures & Algorithms (Intermediate)</li>
         </ul>
     </section>
     <section id="contact">
         <h2>Contact Information</h2>
         <p>If you'd like to get in touch, feel free to email me at <a href="mailto:om.d3v.21@gmail.com">om.d3v.21@gmail.com</a>.</p>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea><br><br>
+            <input type="submit" value="Send">
+        </form>
     </section>
-    <script>
-        const projectLinks = document.querySelectorAll('.project a');
-        projectLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                alert('You will be redirected to: ' + link.href);
-            });
-        });
-    </script>
 </body>
 </html>

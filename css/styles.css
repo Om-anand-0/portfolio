@@ -1,26 +1,56 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset and Body Styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
 header {
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
 }
+
+/* Navigation */
 nav {
     margin-top: 10px;
 }
-nav a {
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
     margin: 0 15px;
+}
+
+nav a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth color transition */
+    padding: 5px 10px; /* Add padding for a button-like feel */
+    border-radius: 5px; /* Rounded corners */
 }
+
 nav a:hover {
-    text-decoration: underline; /* Underline on hover */
+    color: #333;
+    background-color: #fff; /* White background on hover */
 }
+
+/* Main Content Sections */
 section {
     margin: 20px auto;
     padding: 20px;
@@ -29,47 +59,97 @@ section {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 h1, h2 {
     margin-bottom: 20px;
 }
+
 p {
     line-height: 1.6;
 }
+
+/* Projects */
+.project {
+    margin-bottom: 20px;
+}
+
 .project img {
     width: 100%;
     border-radius: 10px;
+    transition: transform 0.3s ease;
 }
-.skills ul {
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove default padding */
+
+.project img:hover {
+    transform: scale(1.05);
 }
-.skills li {
-    background-color: #333; /* Dark background for skill items */
-    color: white; /* White text */
-    display: inline-block; /* Items in a row */
-    padding: 10px; /* Padding around each skill */
-    margin: 5px; /* Space between skills */
-    border-radius: 5px; /* Rounded corners */
-}
-footer {
-    background-color: #333; /* Dark background for footer */
-    color: white; /* White text */
-    text-align: center; /* Center text */
-    padding: 10px; /* Padding inside footer */
-}
-a {
-    color: #2196F3; /* Link color */
-    text-decoration: none; /* Remove underline */
-}
-a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-.project {
-    margin-bottom: 20px; /* Space below each project */
-}
+
 .project h3 {
-    margin-top: 10px; /* Space above project titles */
+    margin-top: 10px;
 }
+
 .project p {
-    margin: 10px 0; /* Space above and below project descriptions */
+    margin: 10px 0;
+}
+
+.project a {
+    color: #2196F3;
+}
+
+.project a:hover {
+    color: #0056b3;
+}
+
+/* Skills Section */
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.skills li {
+    background-color: #333;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #444;
 }

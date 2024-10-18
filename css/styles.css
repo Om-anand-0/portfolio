@@ -71,6 +71,15 @@ p {
 /* Projects */
 .project {
     margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc; /* Border for project cards */
+    border-radius: 10px; /* Rounded corners for project cards */
+    background-color: #f9f9f9; /* Light background for project cards */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.project:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Elevation effect on hover */
 }
 
 .project img {
@@ -93,6 +102,7 @@ p {
 
 .project a {
     color: #2196F3;
+    text-decoration: underline; /* Underline links for better visibility */
 }
 
 .project a:hover {
